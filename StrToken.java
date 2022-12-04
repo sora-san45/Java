@@ -10,7 +10,7 @@ public class StrToken {
         while(st1.hasMoreTokens()){
             int num=Integer.parseInt(st1.nextToken());
             sum+=num;
-            System.out.print(num+" ");
+            System.out.print(num+"+");
         }
         System.out.print("="+sum);
     }
