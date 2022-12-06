@@ -1,6 +1,8 @@
 public class ExceptionHandle {
     void add(int[] a,int[] b) throws IndexOutOfBoundsException{
-        if(a.length!=b.length){throw new IndexOutOfBoundsException("out of range");}
+        if(a.length!=b.length){
+            throw new IndexOutOfBoundsException("out of range");
+        }
         else{
             for(int i=0;i<a.length;i++){
                 System.out.println(a[i]+b[i]);
