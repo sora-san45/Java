@@ -32,6 +32,7 @@ public class BinarySearch{
 
         System.out.println("Enter element to be searched: ");
         int ele = sc.nextInt();
+        Arrays.sort(arr);
 
         int pos=search(arr,ele);
 
