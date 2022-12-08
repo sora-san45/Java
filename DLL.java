@@ -58,13 +58,23 @@ public class DLL {
         }
     }
     void delete(int d){
-        Node i=head;
-        while(i.data!=d){
-            i=i.next;
+        if(head.data==d){
+            head=head.next;
+            head.prev=null;
         }
-        Node temp=i.next;
-        temp.prev=i.prev;
-        i.prev.next=temp;
+        else if(tail.data==d){
+            tail=tail.prev;
+            tail.next=null;
+        }
+        else{
+            Node i=head;
+            while(i.data!=d){
+                i=i.next;
+            }
+            Node temp=i.next;
+            temp.prev=i.prev;
+            i.prev.next=temp;
+        }
     }
     void display(){
         Node i=head;
