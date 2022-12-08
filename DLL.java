@@ -19,7 +19,6 @@ public class DLL {
     void insertfront(int d){
         Node n = new Node(d);
         if(head==null){
-            n.data=d;
             head=tail=n;
         }
         else{
@@ -33,7 +32,6 @@ public class DLL {
     void insertend(int d){
         Node n = new Node(d);
         if(head==null){
-            n.data=d;
             head=tail=n;
         }
         else{
