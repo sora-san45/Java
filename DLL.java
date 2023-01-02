@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class DLL {
 
@@ -19,6 +19,7 @@ public class DLL {
     void insertfront(int d){
         Node n = new Node(d);
         if(head==null){
+            n.data=d;
             head=tail=n;
         }
         else{
@@ -32,6 +33,7 @@ public class DLL {
     void insertend(int d){
         Node n = new Node(d);
         if(head==null){
+            n.data=d;
             head=tail=n;
         }
         else{
@@ -40,7 +42,7 @@ public class DLL {
             tail=n;
         }
     }
-    void insertb(int d1,int d){
+    void insertbetween(int d1,int d){
         Node n= new Node(d);
         if(head==null){
             System.out.println("Empty List");
@@ -83,51 +85,66 @@ public class DLL {
         }
         else{
             while(i!=null){
-                System.out.println(i.data);
+                System.out.print(i.data+" ");
                 i=i.next;
             }
+            System.out.println("");
         }
     }
     public static void main (String[] args){
         Scanner sc= new Scanner(System.in);
         DLL obj= new DLL();
-        while(true){
+        int num;
+        do{
             System.out.println("1. Insert at front"); 
             System.out.println("2. Insert at back"); 
-            System.out.println("3. Insert at bet"); 
+            System.out.println("3. Insert between"); 
             System.out.println("4. Delete"); 
-            System.out.println("5.Display");
-            int op=sc.nextInt();
-            if(op==1){
+            System.out.println("5. Display");
+            System.out.println("6. Exit");
+            int choice=sc.nextInt();
+            switch(choice){
+                case 1:
                 System.out.println("Enter data for node");
-                int num=sc.nextInt();
+                num=sc.nextInt();
                 obj.insertfront(num);
-            }
-            else if(op==2){
+                break;
+
+                case 2:
                 System.out.println("Enter data for node");
-                int num=sc.nextInt();
+                num=sc.nextInt();
                 obj.insertend(num);
-            }
-            else if(op==3){
+                break;
+
+                case 3:
                 System.out.println("Enter data for node");
-                int num=sc.nextInt();
+                num=sc.nextInt();
                 System.out.println("Enter node data after which new node should be added");
                 int num1=sc.nextInt();
-                obj.insertb(num1,num);
-            }
-            else if(op==4){
-                System.out.println("Enter node to be deleted");
-                int num=sc.nextInt();
-                obj.delete(num);
-            }
-            else if(op==5){
-                obj.display();
-            }
-            else if(op==6){
+                obj.insertbetween(num1,num);
                 break;
-            }else{
-                System.out.println("Invalid option");
+
+                case 4:
+                System.out.println("Enter node to be deleted");
+                num=sc.nextInt();
+                obj.delete(num);
+                break;
+
+                case 5:
+                obj.display();
+                break;
+
+                case 6:
+                System.exit(0);
+
+                default:
+                System.out.println("Inavlid choice");
+                break;
+
             }
-        }
+           
+        }while(true);
     }
 }
+
+
