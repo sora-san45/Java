@@ -33,7 +33,7 @@ public class ProdMatrix {
             for(int i=0;i<a;i++){
                 for(int j =0;j<d;j++){
                     mn[i][j]=0;
-                    for(int k=0;k<b;k++){
+                    for(int k=0;k<c;k++){
                         mn[i][j]+=ma[i][k]*mb[k][j];
                     }
                 }
