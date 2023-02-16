@@ -14,13 +14,12 @@ public class DLL {
     }
 
     Node head;
-    Node tail;
 
     void insertfront(int d){
         Node n = new Node(d);
         if(head==null){
             n.data=d;
-            head=tail=n;
+            head=n;
         }
         else{
             Node temp=head;
@@ -34,12 +33,15 @@ public class DLL {
         Node n = new Node(d);
         if(head==null){
             n.data=d;
-            head=tail=n;
+            head=n;
         }
         else{
-            tail.next=n;
-            n.prev=tail;
-            tail=n;
+            Node i = head;
+            while(i.next!=null){
+                i=i.next;
+            }
+            n.prev=i;
+            i.next=n;
         }
     }
     void insertbetween(int d1,int d){
@@ -64,18 +66,21 @@ public class DLL {
             head=head.next;
             head.prev=null;
         }
-        else if(tail.data==d){
-            tail=tail.prev;
-            tail.next=null;
-        }
         else{
             Node i=head;
             while(i.data!=d){
                 i=i.next;
             }
-            Node temp=i.next;
-            temp.prev=i.prev;
-            i.prev.next=temp;
+            
+            if(i.next==null){
+                Node temp=i.prev;
+                temp.next=null;
+            }
+            else{
+                Node temp=i.next;
+                temp.prev=i.prev;
+                i.prev.next=temp;
+            }
         }
     }
     void display(){
