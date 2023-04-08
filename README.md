@@ -1,11 +1,11 @@
 # Java Lab Programs
 
 This is a collection of KTU OOP Lab programs
-|#|Title|Solution|Answer|
+|#|Title|Solution|
 |:---:|:------:|:-----:|:---:|
-|1|[Binary Search](https://projecteuler.net/problem=1)|(https://github.com/sora-san45/Java/blob/master/BinarySearch.java) 
-|2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[Python](https://github.com/PythonicBoat/projecteuler/blob/main/problems/python/2.py) , [C](https://github.com/PythonicBoat/projecteuler/tree/main/problems/c/2.c)|4613730|
-|3|[Largest prime factor](https://projecteuler.net/problem=3)|[Python](https://github.com/PythonicBoat/projecteuler/blob/main/problems/python/3.py) , [C](https://github.com/PythonicBoat/projecteuler/tree/main/problems/c/3.c)|6857|
+|1|[Binary Search](https://projecteuler.net/problem=1)|[Code](https://github.com/sora-san45/Java/blob/master/BinarySearch.java) 
+|2|[Calculator]|[Code](https://github.com/sora-san45/Java/blob/master/Calculator.java)
+|3|[Largest prime factor](https://projecteuler.net/problem=3)|[Python](https://github.com/PythonicBoat/projecteuler/blob/main/problems/python/3.py) , [C]
 |4|[Largest Palinfrom product](https://projecteuler.net/problem=4)||
 |5|[Smallest multiple](https://projecteuler.net/problem=5)||
 |6|[Sum square difference](https://projecteuler.net/problem=6)|[Python](https://github.com/PythonicBoat/projecteuler/blob/main/problems/6.py)|
