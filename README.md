@@ -24,4 +24,4 @@ This is a collection of KTU OOP Lab programs and a few extra programs
 | Left/Right Shift | [Code](https://github.com/sora-san45/Java/blob/master/Shift.java)|
 | String Tokenizer | [Code](https://github.com/sora-san45/Java/blob/master/StrToken.java)|
 | Traffic Light simulation | [Code](https://github.com/sora-san45/Java/blob/master/TrafficLight.java)|
-| Transpose| [Code] (https://github.com/sora-san45/Java/blob/master/Transpose.java)|
+| Transpose| [Code](https://github.com/sora-san45/Java/blob/master/Transpose.java)|
